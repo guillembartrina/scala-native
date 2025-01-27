@@ -285,7 +285,9 @@ object Build {
         libraryDependencies ++= Deps.JUnitJvm,
         Test / fork := true,
         // Running tests in parallel results in `FileSystemAlreadyExistsException`
-        Test / parallelExecution := false
+        Test / parallelExecution := false,
+
+        Compile / doc / sources := Nil
       )
       .zippedSettings(Seq("nscplugin", "javalib", "scalalib")) {
         case Seq(nscPlugin, javalib, scalalib) =>

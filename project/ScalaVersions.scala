@@ -39,14 +39,14 @@ object ScalaVersions {
   // Scala versions used for publishing libraries
   val scala212: String = crossScala212.last
   val scala213: String = crossScala213.last
-  val scala3: String = crossScala3.last
+  val scala3: String = "3.7.0-RC1-bin-SNAPSHOT"
 
   // The latest version of minimal Scala 3 minor version used to publish artifacts
   val scala3PublishVersion = "3.1.3"
   val scala213PublishVersion = crossScala213.head
 
   // List of nightly version can be found here: https://repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/
-  val scala3Nightly = "3.4.0-RC1-bin-20240114-bfabc31-NIGHTLY"
+  val scala3Nightly = "3.7.0-RC1-bin-SNAPSHOT"
 
   // minimum version rationale:
   //   1.5 is required for Scala 3 and
